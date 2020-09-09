@@ -8,20 +8,20 @@
 <body>
 	<div class="wrapper">
 		<section>
-			<h1>Alien Abduction Order Form</h1>
-			<p>Fill out the form below to place an order for an alien abduction 
+			<h1>Alien Abduction Form</h1>
+			<p>Fill out the form below to place an order for an alien abduction
 				by one of our fine UFOs.</p>
 			<form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="POST">
 				<input type="hidden" name="send_to" value="klein.alan@sbcglobal.net">
-				
+
 				<fieldset>
 					<legend>Your contact information</legend>
-					
+
 					<label for ="name">Your name </label>
 						<input type="text" id="name" name="name">
-												
+
 					<label for = "phone">Phone number</label><input type="tel" id="phone" name="phone" placeholder="Don't forget your phone #">
-					
+
 					<label for="email">Email</label><input type="email" id="email" name="email">
 				</fieldset>
 				<fieldset>
@@ -47,12 +47,12 @@
 							<input type="radio" name="ufotype" value="glactica" checked>
 							Battlestar Galactica-style Viper
 						</label>
-							
+
 						<label>
 							<input type="radio" name="ufotype" value="borg" >
 							Borg-style cube
 						</label>
-					 
+
 					<label for="abtype">What type of abduction experience do you want?</label>
 						<select id="abtype" name ="abtype">
 							<option >Select one...</option>
@@ -71,7 +71,7 @@
 
 				<button type ="submit">Submit here Alan</button>
 
-			</form>				
+			</form>
 		</section>
 		<aside>
 			<h3>Our Location</h3>
@@ -86,8 +86,3 @@
 	<script src="js/forms.js"></script>
 </body>
 </html>
-
-
-
-
-
