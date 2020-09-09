@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Udacity Blog Subscription Page</title>
+	<!-- Adding FB icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="../CSS-Files/Main-blog.css" rel="stylesheet" type="text/css">
+	<link href="../CSS-Files/forms.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<img class="header-image2" src="../Images/saw.jpg" alt="Saw">
+			<img class="header-image" src="../Images/woodworker.jpg" alt="woodworker">
+			<br>WOODWORKING
+			IS FUN!!!
+
+		</header>
+
+		<div class="posts">
+			<h2>Previous blog posts</h2>
+
+			<ul class="text-link">
+
+				<li><a href="#" target="_blank">April, 2020
+					</a></li>
+				<li><a href="#" target="_blank">May, 2020
+					</a></li>
+				<li><a href="#" target="_blank">June, 2020
+					</a></li>
+				<li><a href="../HTML-Files/Blog-Post1.html" target="_blank" title="Tools">Tips & Tricks
+					</a></li>
+				<li><a href="../HTML-Files/Blog-Post2.html" target="_blank" title="Tools">Tools
+					</a></li>
+			</ul>
+
+
+		</div>
+		<div class="myContent">
+			<h2>Blog subscription form</h2>
+			<p>Fill out the form below to subscribe to my blog. If I had a backend process I could acutally send you an
+				email, but that is probably in a later project.
+
+			</p>
+			<form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws. com/default/API2SES" method="POST">
+				<input type="hidden" name="send_to" value="klein.alan@sbcglobal.net">
+				<fieldset>
+					<legend>Your contact information</legend>
+
+					<label for="name">Your name </label>
+					<input type="text" id="name" name="name">
+
+					<label for="phone">Phone number</label><input type="tel" id="phone" name="phone"
+						placeholder="(123) 456-7890">
+
+					<label for="email">Email</label><input type="email" id="email" name="email">
+				</fieldset>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+
+		<footer>
+			<div>
+				<h3>Follow me on Facebook, Twitter, and LinkedIn!!</h3>
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-linkedin"></a><br>
+				Click<a href="../HTML-Files/Blog-home.html" title="Home"> HERE </a>to return to the home page.
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/forms.js"></script>
+</body>
+
+</html>

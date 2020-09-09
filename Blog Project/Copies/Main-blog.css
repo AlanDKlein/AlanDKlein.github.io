@@ -1,0 +1,74 @@
+
+
+/* Import needed .css files */
+@import "./Typography.css";
+@import "./useful-links.css";
+@import "./images.css";
+
+/*Create the classes for the Blog Post cards */
+.card, .card1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    /* border: 2px solid black;
+    border-radius: 1rem; */
+    /* margin-left: 4.5rem; */
+}
+
+.card:hover, .card1:hover {
+    /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); */
+    box-shadow: 0.5rem 0.5rem 0.2rem lightslategray;
+}
+
+.card-container, .card1-container {
+    padding: 0.25rem;
+    font-style: italic;
+    color: darkcyan;
+    font-weight: bold;
+}
+
+/* Styling for the body and grid areas */
+body {
+    width: 90%;
+    max-width: 900px;
+    margin: 2em auto;
+    font: .9em/1.2 Arial, Helvetica, sans-serif;
+    background-color: lightgrey;
+}
+
+.container {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-areas: "header header header" "sidebar content useful-links" "sidebar content1 useful-links2" "footer footer footer";
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+}
+
+header {
+    grid-area: header;
+}
+
+.card {
+    grid-area: content;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.card1 {
+    grid-area: content1;
+}
+
+nav.useful-links {
+    grid-area: useful-links;
+}
+
+nav.useful-links2 {
+    grid-area: useful-links2;
+}

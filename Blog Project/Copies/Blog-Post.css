@@ -1,0 +1,121 @@
+/* The main body of the page is a flexbox with the direction of "column" */
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+
+.flex-container div {
+  width: auto;
+  margin: 1rem;
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 1rem;
+}
+
+.flex-container img {
+  width: 30%;
+  float: left;
+  margin-right: 1rem;
+}
+
+.flex-container aside {
+  font-weight: bold;
+  color: darkcyan;
+  border: none
+}
+
+h1 {
+  color: chocolate;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: left;
+  margin-bottom: 0.25rem;
+}
+
+p {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  font-style: italic;
+  color: darkcyan;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Take the margins off of the blockquotes */
+blockquote {
+  margin: 0;
+}
+
+/* The bottom of the page is a flexbox with the direction of "row" */
+
+.author-info {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+  border-radius: 1rem;
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: navy;
+  font-style: italic;
+  background-color: coral;
+  margin-top: 1rem;
+}
+
+.author-info h3 {
+  margin-top: 0.25rem;
+  font-size: medium;
+  font-weight: bold;
+  color: black;
+  text-decoration: underline;
+  font-style: normal;
+}
+
+.author-info>div {
+  width: 50%;
+}
+
+.author-info a:hover {
+  color: black;
+}
+
+/* Facebook Twitter LinkedIn icons & links */
+
+.fa {
+  padding: 1rem;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1rem;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}

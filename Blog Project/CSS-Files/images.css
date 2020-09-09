@@ -1,0 +1,30 @@
+
+/* Styling for the main page images */
+.header-image {
+    border-radius: 1rem;
+    width: 100px;
+    height: 100px;
+    transform: rotate(20deg);
+}
+
+.header-image2 {
+    border-radius: 1rem;
+    margin-right: 13rem;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-20deg);
+}
+
+.my-images {
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+}
+figcaption {
+    /* border: 1px solid red; */
+    margin: 0.5rem 0 0 4rem;
+    color: darkcyan;
+    font-weight: bold;
+}
