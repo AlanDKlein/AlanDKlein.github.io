@@ -1,13 +1,3 @@
-/*
- *
- * CSS written based on SMACSS architecture.
- * To learn more, visit: http://smacss.com/
- * 
- * For simplicity, no reset or normalize is added. 
- * To learn more, visit: https://css-tricks.com/reboot-resets-reasoning/
- *
-*/
-
 /* ---- Base Rules ---- */
 
 body {
@@ -22,9 +12,8 @@ body {
 
 h1 {
     font-family: 'Fira Sans', sans-serif;
-    font-size: 5.5em;
-    margin: .5em 1.5rem;
-  
+    font-size: 3em;
+    margin-left: 1.5em;
 }
 
 /* @media only screen and (min-width: 35em) {
@@ -40,12 +29,14 @@ h2 {
     font-size: 3em;
     color: #fff;
 }
+
 img {
     border-radius: 50%;
-    width: 350px;
-    height: 350px;
+    width: 175px;
+    height: 175px;
     margin-left: 2rem;
 }
+
 p {
     line-height: 1.6em;
     color: #eee;
@@ -59,9 +50,9 @@ main {
 
 .main__header {
     display: flex;
-    min-height: 40vh; 
+    min-height: 40vh;
     padding-top: 1em;
-  }
+}
 
 section {
     position: relative;
@@ -97,20 +88,6 @@ section {
     font-size: large;
     background-color: darkgray;
 }
-
-/* .navbar__menu .menu__link {
-    display: block;
-    padding: 1em;
-    font-weight: bold;
-    text-decoration: none;
-    color: #000;
-}
-
-.navbar__menu .menu__link:hover {
-    background: #333;
-    color: #fff;
-    transition: ease 0.3s all;
-} */
 
 /* Header Styles */
 
@@ -156,46 +133,49 @@ section:nth-of-type(even) .landing__container {
     /* text-align: right; */
     /* text-align: left; */
 }
+
 /* Facebook Twitter LinkedIn icons & links */
+
 #email, #resume {
     color: black;
     background-color: transparent;
-  text-decoration: underline;
-  /* padding-right: 5rem; */
+    text-decoration: underline;
+    /* padding-right: 5rem; */
 }
+
 .email {
     padding-right: 3rem;
 }
+
 .fa {
-	padding: 1rem;
-	font-size: 30px;
-	width: 30px;
-	text-align: center;
-	text-decoration: none;
-	margin: 1rem;
-	border-radius: 50%;
+    padding: 1rem;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 1rem;
+    border-radius: 50%;
 }
 
-.fa:hover, #email:hover{
-	opacity: 0.7;
+.fa:hover, #email:hover {
+    opacity: 0.7;
 }
 
 .fa-facebook {
-	background: #3B5998;
+    background: #3B5998;
     color: white;
-   
 }
 
 .fa-twitter {
-	background: #55ACEE;
-	color: white;
+    background: #55ACEE;
+    color: white;
 }
 
 .fa-linkedin {
-	background: #007bb5;
+    background: #007bb5;
     color: white;
-   
 }
+
 /* Background Circles */
 
 /* Note that background circles are created with psuedo elements before and after */
@@ -263,7 +243,7 @@ section:nth-of-type(3n + 1) .landing__container::after {
 
 /* Section Active Styles */
 
-/* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
+/* Note: your-active-class class is applied through javascript.  */
 
 section.your-active-class {
     background: rgb(0, 0, 0);
