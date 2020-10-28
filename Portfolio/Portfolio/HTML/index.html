@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Alan Klein</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
+  <!-- Load Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header" id="main__header">
+    <nav class="navbar__menu">
+      <ul id="navbar__list">
+
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <header class="main__header">
+      <h1>Alan Klein</h1>
+      <img src='../images/Alan Klein2.jpg'>
+    </header>
+
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+
+    <section id="section1" data-nav="Section 1" class="your-active-class">
+      <div class="landing__container">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra
+          dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus
+          imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget
+          bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet
+          elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo
+          nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie
+          semper in tellus. Sed congue et odio sed euismod.</p>
+
+        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel
+          luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur
+          porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+      </div>
+    </section>
+
+    <section id="section2" data-nav="Section 2">
+      <div class="landing__container">
+        <h2>Education</h2>
+        <p>I completed the Front End Web Development nanodegree program from Udacity&copy in October, 2020. This program
+          consisted of lessons and hands-on projects in HTML5, CSS, and Javascript. Links to the various projects and
+          the code I created for them are below in the "Projects" section of this page.</p>
+
+        <p>During my tenure at AT&T I earned a Masters Degree in Computer Science from Webster University in 2000. I
+          earned this degree while working full time as a developer at AT&T.</p>
+        <p>In 1991 I completed the "Computer Career Program" at Maryville University. This was an accelerated 30-week
+          program in computer programming and system design. This is the program that launched my career in the IT
+          world.</p>
+        <p>My undergraduate work was completed in 1984 with a Bachelor of Health Science degree from the University of
+          Missouri - Columbia.</p>
+
+      </div>
+    </section>
+
+    <section id="section3" data-nav="Section 3">
+      <div class="landing__container">
+        <h2>Work Experience</h2>
+        <p>My career in the IT industry began in 1991 when I completed the 30-week "Computer Career Program" at
+          Maryville University. This program was an acclerated program designed to jump start a career in IT. <br>My
+          first IT job was as a COBOL developer for a very small firm (less than 10 employees) and from there I moved to
+          the corporate world with MCI Communications. Moving on to Bunge North America I began developing user
+          interfaces using the PowerBuilder development tool. In 1996 because of my PowerBuilder experience I was hired
+          by AT&T (Southwestern Bell at the time) where I spent 23 yearsT, first as a developer and the last 15 years as
+          a technical architect.
+        </p>
+
+        <p>I am a firm believer in life-long learning, and I've continued that pholosophy with the completion of
+          Udacity's Front End Web Developer nanodegree program. The work that I've done from this program is listed
+          under the "Projects" section of this page. There I have links to the code on GitHub for your reveiw there.</p>
+          <p>A copy of my resume can be viewed <a id="resume" href='../resume/Alan Klein Resume.doc'>here</a></p>
+      </div>
+    </section>
+    <section id="section4" data-nav="Section 4">
+      <div class="landing__container">
+        <h2>Projects</h2>
+        <p>This section contains links to the projects that were required for the Udacity&copy; nanodegree program.
+          There is a detailed ReadMe file associated with each project which highlights the main technical concepts that
+          each project covered. </p>
+
+        <ul>
+          <li><a href="https://github.com/AlanDKlein/Udacity-Blog-Project" title="Github BLOG">Personal Blog Project</a>
+          </li>
+          <li><a href="https://github.com/AlanDKlein/Udacity-WeatherApp-Project" title="Github Weather App">Weather App
+              Project</a></li>
+          <li><a href="https://github.com/AlanDKlein/Landing-Page-Project" title="Github Landing Page">Landing Page
+              Project</a></li>
+          <li><a href="https://github.com/AlanDKlein/Evaluate-news-nlp" title="Github NLP">Natural Language Processor
+              Project</a></li>
+          <li><a href="https://github.com/AlanDKlein/Travel-PlannerV2.1" title="Github Capstone">Capstone
+              Project - Travel Planner</a></li>
+        </ul>
+  
+      </div>
+    </section>
+
+    <section id="section5" data-nav="Section 5">
+      <div class="landing__container">
+        <h2>Contact Me</h2>
+        <p class="email">Email: &nbsp;&nbsp; <a id="email"
+            href="mailto:klein.alan@sbcglobal.net">klein.alan@sbcglobal.net</a></p>
+         <p> Cell: &nbsp;&nbsp; 314-775-4881</p>
+        <p>Facebook:&nbsp;&nbsp;<a href="http://www.facebook.com/profile.php?id=alan.klein.73/"
+            class="fa fa-facebook"></a></p>
+       <p>   Linkedin:&nbsp;&nbsp;<a href="https://www.linkedin.com/in/alan-klein-0942056/" class="fa fa-linkedin"></a></p>
+
+      </div>
+    </section>
+
+
+
+
+    <button onclick="goToTop()" id="myBtn" title="Go to top">Go To Top</button>
+  </main>
+  <footer class="page__footer">
+    <p></p>
+  </footer>
+  <script src="../js/app.js"></script>
+</body>
+
+</html>
