@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            padding-top: 2rem;
+            text-align: center;
+        }
+
+        p,
+        li {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: medium;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Udacity Capstone Project Overview</h1>
+    <p>
+        This is the final project in the Udacity Front-End Web Developer
+        nanodegree program. The project is designed to bring together all of the
+        skills learned throughout the program. The objective was to create a
+        Travel Planner application which incorporated various pieces of
+        functionality which is have outlined below.
+    </p>
+    <h2>Application Workflow</h2>
+
+    <h3>Get Trip Details</h3>
+    <p>At the initial launch of the application the "Save This
+        Trip" button is disabled. After the user enters some input into the date
+        and location fields and selects "Get Trip Details" the button becomes
+        active. Additionally there are edits to ensure the date fields are input
+        correctly (the depart date is prior to the retun date, the depart date is
+        not in the past, etc.). </p>
+    <p>When the "Get Trip Details" is selected a series
+        of API and function calls are made.</p>
+    <ul>
+        <li>The date_diff_indays() function is
+            called to determine how far in the future the departure date is. This is
+            used later in the Weatherbit API.</li>
+        <li>The Geonames api is called with the
+            City, State, Country and API Key to get the longitude and latitude of the
+            destination city.</li>
+        <li>The longitude and latititude are pulled from the
+            response and put into the Weatherbit API call to get either current or
+            forecasted weather data. The result from date_diff_indays() is used as a
+            parameter for this API.</li>
+        <li>The results from the Weatherbit API are parsed
+            and used to create verbiage to display to the user.</li>
+        <li>The Pixabay API is
+            then called with city, state, and country parameters to get a picture of
+            the destination. FIrst the city parameter is used, and if no picture of
+            the city is found the API is called again with country as a parameter.</li>
+        <li>
+            The next step in the flow is to call the REST Countries API with the
+            country parameter. The data returned by this API is passed to the
+            buildPageFacts() function which then parses it and adds verbiage to
+            display on the screen.</li>
+        <li>Finally the countdown() function is called with
+            departure_date and return_date parameters. This function first
+            determines how long the trip is by calling the date_diff_indays()
+            function, and then starts a countdown from today until the departure date.
+            The results of this are put into readable verbiage to display on the
+            screen. </li>
+    </ul>
+    <h2>Save Trip, Retrieve Trip, Delete Trip</h2>
+    </p>
+    <h3>Save Trip </h3>
+    <p>The "Save This Trip" button is disabled until the "Get Trip Details"
+        is selected and a current trip is displayed on the screen. When selected the
+        saveThisTrip() function in the **processTripData.js** file called and the
+        relevent data points are retrieved from the DOM and put into in a Javascript
+        object which is then saved to LocalStorage. The object is converted to a
+        string with the JSON.stringify method prior to saving to storage. This
+        function then dynamically builds a radio button and text to display in the "My Saved
+        Trips" section of the documnent.</p>
+    <h3>Retrieve Trip</h3>
+    <p>To view the details of a
+        previously saved trip the user must first select the trip to view and then
+        press the "Retrieve Trip" button. This will then call the getSavedTrip()
+        function in the **processTripData.js** file. The function loops through the
+        saved trips to find the one selected and then retrieves the data from
+        LocalStorage. It then parses the data with JSON.parse() and inserts the
+        data into the appropriate fields on the DOM. Finally it calls the
+        countdown() function to start a countdown for this trip. </p>
+    <h3>Delete Trip</h3>
+    <p> To
+        delete a previously saved trip the user must first select the trip to delete
+        and then press the "Delete This Trip" button. This will then call the
+        deleteTrip() function in the **processTripData.js** file. The function loops
+        through the saved trips to find the one selected and then deletes the data
+        from LocalStorage with the removeItem(key) method. Next the function
+        removes the radio button and verbiage from the DOM, and calls the
+        countdown() function with 0's as parameters to stop the countdown and clear
+        the DOM element.</p>
+        <h2>Web APIs and Local Storage</h2>
+    <h3>Web APIs called</h3>
+    <ul>
+        <li>Geonames</li>
+        <li>Weatherbit </li>
+        <li>Pixabay </li>
+        <li>REST Countries </li>
+    </ul>
+    <h3>Local Storage/Retrieval</h3>
+    <p>The project made use of the HTML5
+        localStorage functionality.</p>
+</body>
+
+</html>
