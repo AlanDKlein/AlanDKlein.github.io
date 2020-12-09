@@ -1,0 +1,26 @@
+/* Styling for the different links */
+
+aside ul {
+    list-style-type: none;
+    padding: 0.5rem;
+}
+
+.text-link {
+    padding-left: 0.5rem;
+}
+
+>.text-link a:link {
+    color: black;
+}
+
+.text-link a:visited {
+    color: purple;
+}
+
+.text-link a:hover {
+    color: darkcyan;
+}
+
+.text-link a:active {
+    color: red;
+}

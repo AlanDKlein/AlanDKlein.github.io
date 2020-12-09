@@ -1,0 +1,188 @@
+body {
+  /* background: #fffff8; */
+  background: linear-gradient(brown, burlywood);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#app {
+  width: 95%;
+  height: 90%;
+  display: grid;
+  /* grid-template-areas: "hr hr hr hr" "photo entry entry entry" "saved details details details" "footer footer footer footer"; */
+
+  grid-template-areas: "hr hr hr hr" "photo entry entry entry" "saved details details details";
+  /* grid-template-columns: auto;
+  grid-template-rows: auto; */
+  grid-template-columns: 35% 65%;
+  grid-template-rows: auto;
+  grid-gap: 0.51rem;
+  color: black;
+  font-family: "Oswald", sans-serif;
+}
+
+.photo {
+  grid-area: photo;
+  color: black;
+  width: 100%;
+  /* height: 100%; */
+  /* position: fixed; */
+}
+
+#image {
+  border-radius: 10rem;
+}
+
+.entry {
+  grid-area: entry;
+}
+
+.entry {
+  background-color: burlywood;
+  border: 2px solid black;
+}
+
+.field_set {
+  border-color: black;
+  border-style: solid;
+  font-size: 1.25rem;
+}
+
+.headline {
+  grid-area: hr;
+  text-align: center;
+  border: 2px solid black;
+  font-size: 2.5rem;
+}
+
+label {
+  display: block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.25rem;
+}
+
+.dates,
+.destination {
+  display: flex;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  border: 1px solid black;
+  font-size: 1.5rem;
+}
+
+.details {
+  grid-area: details;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.saved {
+  grid-area: saved;
+  padding-left: 0.5rem;
+}
+
+#weather {
+  padding-top: 0.5rem;
+}
+
+#countDown,
+#leaveDate {
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+#getTrip {
+  float: right;
+  margin-top: 2rem;
+}
+
+#clear {
+  float: right;
+  position: absolute;
+  margin-top: 5rem;
+  right: 0;
+  margin-right: 4.25rem;
+  width: 7.5rem;
+  height: 2rem;
+  background-color: burlywood;
+  color: black;
+  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+  border: 2px solid black;
+  box-shadow: 2px 4px 5px #444;
+  text-align: center;
+  border-radius: 1rem;
+}
+#delete {
+  float: left;
+  margin-top: 2rem;
+  margin-left: 0;
+}
+
+#radio {
+  font-size: small;
+}
+
+.title {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.myInput {
+  border-radius: 1rem;
+  margin: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.submit {
+  width: 7.5rem;
+  height: 2rem;
+  padding: 1rem, 0.5rem, 0.5rem, 0.5rem;
+  background-color: burlywood;
+  color: black;
+  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+  border: 2px solid black;
+  box-shadow: 2px 4px 5px #444;
+  text-align: center;
+  border-radius: 1rem;
+  margin-bottom: 0.25rem;
+  margin-left: 1.25rem;
+  margin-right: 0.25rem;
+  float: right;
+}
+
+/* #clear, */
+#generate,
+#saveTrip {
+  margin-top: 2rem;
+}
+
+#generate:hover,
+#saveTrip:hover,
+#getTrip:hover,
+#clear:hover,
+#delete:hover {
+  color: burlywood;
+  background-color: black;
+  cursor: pointer;
+  border: 2px solid burlywood;
+}
+
+#saveTrip:disabled,
+#saveTrip[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+.page__footer {
+  background: brown;
+  padding: 1em;
+  color: black;
+}
+
+.page__footer p {
+  color: black;
+  font-weight: bold;
+}
