@@ -8,9 +8,8 @@ body {
   width: 95%;
   height: 90%;
   display: grid;
-  /* grid-template-areas: "hr hr hr hr" "photo entry entry entry" "saved details details details" "footer footer footer footer"; */
 
-  grid-template-areas: "hr hr hr hr" "photo entry entry entry" "saved details details details";
+  grid-template-areas: "hr hr hr hr" "photo entry entry entry" "saved details details details" "footer footer footer footer";
   /* grid-template-columns: auto;
   grid-template-rows: auto; */
   grid-template-columns: 35% 65%;
@@ -18,6 +17,26 @@ body {
   grid-gap: 0.51rem;
   color: black;
   font-family: "Oswald", sans-serif;
+}
+/* Medium devices (landscape tablets, 600px to 1000px) */
+@media (min-width: 600px) and (max-width: 1000px) {
+  #app {
+    grid-template-areas: "hr hr hr hr" "entry entry entry entry" "details details details details" "saved photo photo photo";
+    font-size: small;
+  }
+}
+
+/* @media (min-width: 600px) and (max-width: 950px) {
+  #app {
+    grid-template-areas: "hr hr hr hr" "entry entry entry photo" "saved details details details" "saved saved details details";
+  }
+} */
+
+/* Small devices (less than 600px) */
+@media (max-width: 599px) {
+  #app {
+    grid-template-areas: "hr hr hr hr" "entry entry entry entry" "details details details details" "saved saved photo photo";
+  }
 }
 
 .photo {
@@ -90,20 +109,14 @@ label {
   padding-top: 0.5rem;
   padding-left: 0.5rem;
 }
-
-#getTrip {
-  float: right;
-  margin-top: 2rem;
-}
-
-#clear {
-  float: right;
-  position: absolute;
-  margin-top: 5rem;
-  right: 0;
-  margin-right: 4.25rem;
+.trips button {
+  /* float: right; */
+  /* display: block; */
+  margin-left: 87%;
+  margin-top: 0.5rem;
   width: 7.5rem;
   height: 2rem;
+  padding: 1rem, 0.5rem, 0.5rem, 0.5rem;
   background-color: burlywood;
   color: black;
   font-size: 1rem;
@@ -113,6 +126,15 @@ label {
   text-align: center;
   border-radius: 1rem;
 }
+#getTrip {
+  float: right;
+  margin-top: 2rem;
+}
+
+#clear {
+  margin-top: 0.5rem;
+}
+
 #delete {
   float: left;
   margin-top: 2rem;
