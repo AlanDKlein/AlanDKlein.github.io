@@ -1,0 +1,26 @@
+/* Styling for the different links */
+
+aside ul {
+  list-style-type: none;
+  padding: 0.5rem;
+}
+
+.text-link {
+  padding-left: 0.5rem;
+}
+
+.text-link a:link {
+  color: blue;
+}
+
+.text-link a:visited {
+  color: blue;
+}
+
+.text-link a:hover {
+  color: rgb(86, 88, 109);
+}
+
+.text-link a:active {
+  color: red;
+}
