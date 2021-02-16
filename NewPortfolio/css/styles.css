@@ -435,7 +435,7 @@ section.your-active-class p {
   margin-bottom: 2rem;
   height: 100%;
   width: 100%;
-  background-image: url("/images/all.jpg");
+  background-image: url("../images/all.jpg");
   background-size: auto;
 
   /* Create the parallax scrolling effect */
