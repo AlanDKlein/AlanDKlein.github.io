@@ -172,7 +172,7 @@ body {
   height: 770px;
   /* height: 100%; */
   width: 100%;
-  background-image: url("/images/me3.JPG");
+  background-image: url("../images/me3.JPG");
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -187,7 +187,7 @@ body {
   /* Full height */
   height: 100%;
   width: 100%;
-  background-image: url("/images/mizzou.jpg");
+  background-image: url("../images/mizzou.jpg");
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -200,7 +200,7 @@ body {
 
   height: 100%;
   width: 100%;
-  background-image: url("/images/productivity1.jpg");
+  background-image: url("../images/productivity1.jpg");
   color: blue;
 
   /* Create the parallax scrolling effect */
