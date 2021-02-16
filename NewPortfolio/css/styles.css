@@ -1,0 +1,628 @@
+/* ---- Base Rules ---- */
+
+body {
+  background: rgb(158, 195, 243);
+  /* background: linear-gradient(
+    0deg,
+    rgba(136, 203, 171, 1) 0%,
+    rgba(0, 13, 60, 1) 100%
+  ); */
+  margin: 0;
+  font-family: "Merriweather", serif;
+  color: #fff;
+}
+.card {
+  text-align: center;
+  width: 325px;
+  margin-left: 2rem;
+}
+.card-body p {
+  color: black;
+}
+.pricing-column {
+  padding: 3% 2%;
+}
+.card-header {
+  background-color: rgba(222, 184, 135, 0.219);
+  color: black;
+}
+.headerH3 {
+  color: white;
+}
+.explain {
+  margin-top: 1rem auto 1rem auto;
+  border: 1px solid black;
+  background-color: white;
+  font-size: 1rem;
+  color: black;
+  width: 65%;
+  margin-left: 16rem;
+  padding: 1rem;
+  text-align: center;
+}
+.pricing {
+  padding-top: 25px;
+  margin: 25px;
+  text-align: center;
+  color: black;
+}
+
+.pricing h2 {
+  color: black;
+  border-bottom: none;
+}
+.pricing p {
+  font-size: 1rem;
+}
+#section4 h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 3.5rem 0 0 0.5rem;
+}
+.allprojects {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  /* grid-template-columns: 750px;
+  grid-template-rows: 150px; */
+  grid-template-areas: "rc11 rc12" "rc21 rc22";
+  column-gap: 20px;
+  row-gap: 20px;
+  width: auto;
+  height: 37rem;
+  padding: 1.5rem;
+  font-weight: bold;
+}
+.project1 {
+  /* width: 750px;
+  height: 200px; */
+  padding-left: 0.5rem;
+  /* padding-bottom: 0.5rem; */
+  grid-area: rc11;
+  border: 2px solid black;
+}
+
+.project2 {
+  /* width: 750px;
+  height: 200px; */
+  padding-left: 0.25rem;
+  grid-area: rc12;
+  border: 2px solid black;
+}
+.project1Img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: auto;
+  margin-bottom: auto; */
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  width: 97%;
+  height: 90%;
+
+  cursor: pointer;
+  /* margin: auto 0; */
+}
+.project2Img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: auto;
+  margin-bottom: auto; */
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  width: 100%;
+  height: 90%;
+
+  cursor: pointer;
+  /* margin: auto 0; */
+}
+.project3 {
+  /* width: 750px;
+  height: 200px; */
+  padding-left: 0.25rem;
+  grid-area: rc21;
+  border: 2px solid black;
+  margin-bottom: 0.5rem;
+
+  /* padding-bottom: 2px; */
+}
+.project4 {
+  /* width: 775px;
+  height: 300px; */
+  padding-left: 0.25rem;
+  grid-area: rc22;
+  border: 2px solid black;
+  margin-bottom: 0.5rem;
+}
+.project3Img {
+  display: block;
+  margin: 2rem auto 2rem auto;
+  width: 80%;
+  height: 65%;
+  /* border-radius: 50%; */
+  cursor: pointer;
+  /* margin: auto 0; */
+}
+.project4Img {
+  display: block;
+  margin: 2rem auto 2rem auto;
+  width: 55%;
+  height: 65%;
+  border-radius: 50%;
+  cursor: pointer;
+  /* margin: auto 0; */
+}
+.eduParagraph {
+  background: none;
+}
+.meParagraph {
+  margin: 0;
+  padding-top: 1.5rem;
+  /* height: 600px; */
+}
+
+/* Full height */
+
+.parallaxMe {
+  /* The image used */
+  /* background-image: url("/images/Reeseandme.JPG"); */
+  /* filter: blur(4px); */
+  /* Full height */
+  height: 770px;
+  /* height: 100%; */
+  width: 100%;
+  background-image: url("/images/me3.JPG");
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallaxEDU {
+  /* The image used */
+  /* background-image: url("/images/Reeseandme.JPG"); */
+  /* filter: blur(4px); */
+  /* Full height */
+  height: 100%;
+  width: 100%;
+  background-image: url("/images/mizzou.jpg");
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallaxWork {
+  /* The image used */
+
+  height: 100%;
+  width: 100%;
+  background-image: url("/images/productivity1.jpg");
+  color: blue;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Typeography General*/
+
+h1 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 3em;
+  margin-left: 1.5em;
+}
+
+h2 {
+  border-bottom: 1px solid #cc1;
+  font-family: "Oxygen", Sans-Serif;
+  font-size: 3em;
+  color: #fff;
+}
+
+p {
+  line-height: 1.6em;
+  color: #eee;
+}
+
+/* ---- Layout Rules ---- */
+
+main {
+  /* margin: 10vh 1em 10vh; */
+  margin-top: 10vh;
+}
+
+.main__header {
+  display: flex;
+  min-height: 25vh;
+  padding-top: 1em;
+}
+
+section {
+  position: relative;
+  /* min-heigh: 80vh; */
+}
+
+/* ---- Module Rules ---- */
+.href {
+  color: black;
+}
+/* Navigation Styles*/
+
+.navbar__menu ul {
+  padding-left: 0;
+  margin: 0;
+  text-align: right;
+  color: red;
+  background-color: indigo;
+}
+
+.navbar__menu li {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+  margin-top: 0;
+}
+
+.navbar__menu li:hover {
+  background-color: white;
+  color: indigo;
+}
+
+.active_listItem {
+  font-size: large;
+}
+
+/* Header Styles */
+
+.page__header {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+/* Footer Styles */
+
+.page__footer {
+  background: #000;
+  padding: 3em;
+  color: #fff;
+}
+
+.page__footer p {
+  color: #fff;
+}
+
+/* ---- Theme Rules ---- */
+
+/* Landing Container Styles */
+
+.landing__container {
+  /* padding: 1em; */
+  text-align: left;
+}
+
+@media only screen and (min-width: 35em) {
+  .landing__container {
+    max-width: 50em;
+    padding: 6em;
+  }
+}
+
+section:nth-of-type(even) .landing__container {
+  margin-right: 0;
+  margin-left: auto;
+  /* text-align: right; */
+  /* text-align: left; */
+}
+
+/* Facebook Twitter LinkedIn icons & links */
+
+#resume,
+#email {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+  /* padding-right: 5rem; */
+}
+.contactMe {
+  display: inline;
+}
+.email {
+  padding-right: 3rem;
+}
+#section5 {
+  background-color: rgb(56, 55, 55);
+  padding: 13rem 0 13rem 0;
+  text-align: center;
+}
+#section4 {
+  height: 100%;
+  width: 100%;
+}
+.fa {
+  padding: 1rem;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1rem;
+  border-radius: 50%;
+}
+
+.fa:hover,
+#email:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  /* width: 25%; */
+}
+
+/* Section Active Styles */
+
+/* Note: your-active-class class is applied through javascript.  */
+
+section.your-active-class p {
+  color: white;
+}
+
+/* Style the "Go To Top" button */
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: darkblue;
+  /* Set the background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px 25px 10px 25px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+}
+
+/* Add a maroon background on hover */
+
+#myBtn:hover {
+  color: darkblue;
+  background-color: white;
+}
+
+/* SLIDER */
+/* .sliderBody {
+  margin: 0;
+ 
+} */
+.sliderBody {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  height: 100%;
+  width: 100%;
+  background-image: url("/images/all.jpg");
+  background-size: auto;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.slider {
+  /* max-width: 350rem; */
+  margin-top: 25rem;
+  width: 100;
+  height: 35rem;
+  margin: 0;
+
+  position: relative;
+  /* IN THE END */
+  overflow: hidden;
+  box-shadow: 5px 10px 28px black;
+}
+
+.slider__paragraph {
+  width: 65%;
+  text-align: center;
+  background-color: white;
+  color: #55acee;
+  margin: 1rem auto 0 auto;
+  padding: 0.25rem;
+  font-size: 1rem;
+  font-weight: ;
+}
+.slide {
+  position: absolute;
+  top: 28%;
+  /* top: 20; */
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+
+.slide > img {
+  /* Only for images that have different size than slide */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 53%;
+  z-index: 10;
+  border: 2px solid black;
+  /* background: rgba(255, 255, 255, 0.7); */
+  background: white;
+  font-family: inherit;
+  color: black;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.slider__btn--left {
+  left: 18%;
+  transform: translate(-50%, -50%);
+  /* margin-right: 2rem; */
+  margin-left: 0.5rem;
+}
+
+.slider__btn--right {
+  right: 18%;
+  transform: translate(50%, -50%);
+}
+
+.dots {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dots__dot {
+  border: none;
+  background-color: white;
+  opacity: 0.7;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1.75rem;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  /* Only necessary when overlying images */
+  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+}
+
+.dots__dot:last-child {
+  margin: 0;
+}
+
+.dots__dot--active {
+  /* background-color: #fff; */
+  background-color: rgb(43, 42, 42);
+  opacity: 1;
+}
+
+/* TESTIMONIALS */
+.testimonial {
+  width: 50%;
+  position: relative;
+  bottom: 100px;
+}
+
+.testimonial::before {
+  content: "\275D";
+  position: absolute;
+  top: -1.7rem;
+  left: -2.8rem;
+
+  line-height: 1;
+  font-size: 5rem;
+  font-family: inherit;
+  color: var(--color-primary);
+  z-index: -1;
+}
+.testimonial::after {
+  content: "\275E";
+  position: absolute;
+  top: 11.5rem;
+  right: -0.8rem;
+  line-height: 1;
+  font-size: 5rem;
+  font-family: inherit;
+  color: var(--color-primary);
+  z-index: -1;
+}
+
+.testimonial__header {
+  font-size: 2.25rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial__text {
+  font-size: 2.75rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3.5rem;
+  color: whitesmoke;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.testimonial__author {
+  margin-left: 3rem;
+  font-style: normal;
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 100;
+  column-gap: 2rem;
+  color: rgb(247, 208, 162);
+}
+
+.testimonial__photo {
+  grid-row: 1 / span 2;
+  width: 6.5rem;
+  border-radius: 50%;
+}
+
+.testimonial__name {
+  font-size: 1.7rem;
+  font-weight: 500;
+  align-self: end;
+  margin: 0;
+}
+
+.testimonial__location {
+  font-size: 1.5rem;
+}
+
+.section__title--testimonials {
+  margin-bottom: 4rem;
+}

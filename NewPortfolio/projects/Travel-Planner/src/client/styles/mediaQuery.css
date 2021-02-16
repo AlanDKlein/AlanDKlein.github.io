@@ -1,0 +1,21 @@
+/* Small devices (less than 600px) */
+@media (max-width: 599px) {
+  #app {
+    grid-template-areas: "hr hr hr hr" "entry entry entry entry" "details details details details" "saved saved photo footer";
+    font-size: smaller;
+  }
+}
+
+/* Small devices (less than 600px)
+@media (max-width: 599px) {
+  #app {
+    grid-template-areas: "hr hr hr hr" "entry entry entry entry" "details details details details" "saved saved saved photo";
+  }
+}
+
+/* Medium devices (landscape tablets, 600px to 1000px) */
+/* @media (min-width: 600px) and (max-width: 1000px) {
+  #app {
+    grid-template-areas: "hr hr hr hr" "entry entry entry photo" "saved details details details" "saved saved details details";
+  }
+} */
